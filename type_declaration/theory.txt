@@ -80,3 +80,34 @@ Character Types
       UTF-16.
     - char32_t = a type for holding 32-bit character sets, such as
       UTF-32.
+    	- [_t suffix is often used to denote aliases]
+		- c++ provides two types for which the answer is definite:
+		signed char, can hold at least values -127 to 127.
+		- and unsigned char can hold at least the values 0 to 255.
+		- the character types are integral types so that arithmatic
+		and bitwise logical operations apply.
+
+		CHARACTER LITERALS:
+		- octal -> '\6' , '\60', '\137'
+		- hexadecimal -> '\x6', '\x30', '\x05f'
+
+Integer Types:
+--------------
+	- each integer type comes in three forms
+		- int, signed int(signed), unsigned int(or unsigned)
+	- comes in four sizes
+		- short int(or short), int, long int(or long), long long int(or long long)
+
+	LITERALS:
+	---------
+		- octal -> 0, 02, 077, 0123
+		- hexadecimal -> 0x0, 0x2. 0x3f, 0x63
+		- U can be used to write explicitely unsigned literals.
+		- L for long.
+		- eg: 3U -> unsigned int, 3L -> long int.
+		- combination of suffixes are allowed: cout << 0xF0UL;
+
+Floating Point:
+---------------
+	- float(single precision), double(double-precision), long double(extende-precision)
+	
